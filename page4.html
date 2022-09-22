@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    <head><meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Zach's Page</title>
+        <title> Zach's page</title>
     </head>
     <body>
-        <header>
-            <div>
-                <a href="index.html">
-                    <img src="http://cdn.onlinewebfonts.com/svg/img_388047.png" alt="Home" width="30" height="30">
-                </a>
-            </div>
-        </header>
-        <h1 style="text-align:center">Zach's Personality Youtube Video test!</h1>
-        <p> So you want to take a test and see what YouTube video you should watch today. 
-            Well you've come to the right place! Take this quick quiz and find the video you should watch!
-        </p>
-        <img src="https://c.tenor.com/bTaiHIz-zHYAAAAM/vodka-two.gif">
-        <br/>
+      <header>
         <div>
-            <a href="page1.html"><button type="button">Start The Quiz</button></a>
+            <a href="index.html">
+                <img src="http://cdn.onlinewebfonts.com/svg/img_388047.png" alt="Home" width="30" height="30">
+            </a>
         </div>
-            <details>
-            <summary>click here</summary>
-            <p>
-                <h3> WOAH! </h3>
-                <pre>
+      </header>
+        <h1 style="text-align:center">Question 3</h1>
+        <div style="text-align: center">
+          <label for="skills">Progress</label>
+          <progress id="skills" value="2" max="100"></progress>
+        </div>
+        
+        <br/>
+        <details>
+          <summary>Click Me</summary>
+          <p>
+            <h3> Watch Out!!</h3>
+            <pre>
                         ¶¶¶¶                               ¶¶¶¶
                       ¶¶¶11¶¶¶                           ¶¶¶11¶¶¶
                      ¶¶111111¶¶                         ¶¶111111¶¶
@@ -60,13 +57,16 @@
                                   ¶¶¶¶1111111111111¶¶¶
                                      ¶¶11111111111¶¶
                                       ¶¶¶¶¶¶¶¶¶¶¶¶¶
-                    </pre>
-                    </p>
+            
+            Woah! looks like we have an alien here! what should we name them?
+            </pre>
+          </p>
+          <form >
+            <label for="fname">What's their name</label>
+            <input type="text" id="fname" name="fname"><br>
+          </form>
         </details>
-        <label for="skills"> Web Dev Skills</label>
-        <progress id="skills" value="50" max="100"></progress>
-        <label for="setcolour"> Select Colour</label>
-        <input type="color" id="setcolour">
+        
         <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
             <input type="number" id="b" name="b" value="10" /> +
             <input type="number" id="a" name="a" value="10" /> =
