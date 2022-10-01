@@ -1,0 +1,189 @@
+/*Default changes for the page*/
+body {
+    background-color: powderblue;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: black;
+  }
+  h4{
+    margin: 0px;
+  }
+  #picture {
+    float: left;
+    height: auto;
+    border-style: solid;
+    border-color: purple;
+  }  
+  #name {
+    margin-left: 5px;
+    float: left;
+    height:max-content;
+    text-align: center;
+    font-size: xx-small;
+  }
+  /*spacing moxes for the ability scores*/
+  .scorecolumn {
+    margin-left: 5px;
+    float: left;
+    height:max-content;
+    width: 7.84%;
+    padding-top: 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  #proficiency {
+    margin-left: 5px;
+    float: left;
+    max-height: 100px;
+    width: 11%;
+    text-size-adjust: 80%;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    font-size: small;
+  }
+
+  #walking {
+    margin-left: 5px;
+    float: left;
+    max-height: 100px;
+    width: 11%;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    font-size: small;
+  }
+  #inspiration {
+    margin-left: 5px;
+    float: left;
+    height: 50px;
+    width: 6%;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    font-size: 12px;
+  }
+  #hp {
+    margin-left: 5px;
+    float: left;
+    height: 100px;
+    width: 19.9%;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    font-size: small;
+  }
+  /*Font Changes*/
+  .alternate {
+    color: #00000070;
+  }
+  /* Clear floats after the columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-left: 5px;
+  }
+  /*Skills Box */
+  #box1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    padding: 10px 0px 0px 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  #skills{
+    width: 100%;
+  }
+  #skills tr > td {
+    padding-top: 7px;
+    padding-bottom: 11px;
+    font-size: 15px;
+  }
+.under{
+    border-bottom: 1px solid rgba(128, 0, 128, 0.500);
+}
+/*Saving Throws*/
+  #box2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  #saving{
+    padding: 5px 0px 0px 10px;
+  }
+  .savset{
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 30px;
+  }
+  #box3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  /*Box 2: Senses */
+  #senses{
+    padding: 5px 0px 0px 10px;
+  }
+  #senses tr >td{
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 30px;
+  }
+  #box4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  #box5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+  }
+  #box6 {
+    padding: 5px 5px 0px 5px;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    text-align: left;
+    border-style: solid;
+    border-color: purple;
+  }
+  #box6 h5{
+    margin: 0px;
+
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 5px;
+  }
