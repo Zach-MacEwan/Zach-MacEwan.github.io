@@ -159,6 +159,19 @@ body {
     border-style: solid;
     border-color: purple;
   }
+  #box4 #init {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: left;
+  }
+  #box4 #ac > h4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+  }
+  #box4 #def > h4 {
+    text-align: right;
+  }
   #box5 {
     grid-column-start: 3;
     grid-column-end: 5;
