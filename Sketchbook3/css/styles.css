@@ -29,8 +29,8 @@ header img {
 
 /*Skills Box */
 #box1 {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   text-align: center;
@@ -50,19 +50,25 @@ header img {
 /*Saving Throws*/
 #box2 {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
   text-align: center;
   border-style: solid;
   border-color: purple;
   border-radius:1em;
 }
-
+#box2 h3 {
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding-bottom: 50px;
+  padding-left:1rem;
+}
 #box3 {
   grid-column-start: 10;
-  grid-row-start: 4;
-  grid-row-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 9;
   text-align: center;
 }
 .ability {
@@ -74,21 +80,27 @@ header img {
 }
 
 #box4 {
-  grid-column-start: 11;
+  grid-column-start: 12;
   grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 6;
   text-align: center;
   border-style: solid;
   border-color: purple;
   border-radius:1em;
 }
+#box4 h3 {
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding-top: 50px;
+}
 
 #box5 {
   grid-column-start: 3;
   grid-column-end: 10;
-  grid-row-start: 4;
-  grid-row-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 9;
   text-align: center;
   transition: transform .3s;
 }
@@ -105,9 +117,9 @@ header img {
   object-position: center;
 }
 #box6 {
-  grid-column-start: 1;
-  grid-column-end: 10;
-  grid-row-start: 10;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 9;
   grid-row-end: 12;
   text-align: left;
   border-style: solid;
