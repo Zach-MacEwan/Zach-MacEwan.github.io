@@ -1,0 +1,351 @@
+
+/* Let's create a clearly marked part of our CSS file to 
+put down all the high level and universally applied properties
+*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* The most representative style of your type shold be established
+ first. Then you can change it with sp[ecificity later.
+*/
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: rgba(255, 238, 0, 0.3);
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* layout styling */
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+.container-fluid {
+	width: 100%;
+	height: 70px;
+
+}
+
+.right-align {
+	float: right;
+}
+.left-align {
+	float: left;
+}
+
+/* Header Styling */ 
+
+header {
+	background-color: #153B84;
+}
+
+
+#logo>a {
+	display: inline-block;
+	width: 75px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+header nav {
+	width: 870px;
+}
+
+.nav-link {
+	margin-top: 13px;
+	margin-bottom: 0;
+}
+
+.nav-link a {
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 0;
+	margin-left: 10px;
+	padding: 10px 20px;
+}
+
+header #youtube-icon {
+	width: 30px;
+	height: auto;
+	display: block;
+}
+
+/* Hero/Bilboard Styling */ 
+
+
+#hero {
+	background-image: url(https://i.imgur.com/Ruj6ZGe.gif);
+    background-size: cover;
+	background-size: cover;
+	background-color: red;
+	height: 85vh;
+}
+
+#hero-chunk {
+	width: 400px;
+	color: #000;
+	margin-top: 280px;
+	margin-left: 100px;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h4 {
+	padding-bottom: 30px;
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+a.CTA:hover {
+	background-image: url(https://media.tenor.com/6YOG5MRdU6YAAAAC/family-guy-wavy-inflatable-arm-tube-man.gif);
+	background-size: contain;
+	color: #000;
+}
+
+/* Mission Statement */ 
+
+#mission {
+	text-align: center;
+	color: #161616;
+	width: 580px;
+	height: 180px;
+	margin: 80px auto;
+	margin-bottom: 160px;
+}
+
+#mission h2 {
+	padding-bottom: 10px;
+}
+
+#mission p {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+}
+#al1 {
+	position: absolute;
+	bottom: -250px;
+	left: 25px;
+}
+#al2 {
+	position: absolute;
+	bottom: -250px;
+	right: 25px;
+	transform: scaleX(-1);
+}
+
+/* The next style is for the cards */
+#buy {
+	text-align: center;
+}
+#buy h2 {
+	margin-top: 20px;
+}
+
+#slides {
+	background-color: #161616;
+	color: #fff;
+	width: 75vw;
+	height: 880px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	padding: 50px;
+}
+
+#map {
+	background-color: #fff;
+	color: #161616;
+	width: 75vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	margin-bottom: 30px;
+}
+/*Interior Item boxes */
+#wrapper {
+	color: #161616;
+	width: 90vw;
+	height: 950px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 450px;
+	column-gap: 5px;
+	row-gap: 5px;
+}
+#box {
+	background-color: #fff;
+	width: auto;
+	height: 450px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 15px;
+}
+#box:hover {
+	border-style: solid;
+	border-color: green;
+}
+#box img {
+	width: 100%;
+ 	height: 75%;
+	object-fit: contain;
+	object-position: center;
+	margin-bottom: 25px;
+}
+
+
+footer{
+	background-color: #153B84;
+}
+#product-grid {
+	width: 1170px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+color: #ffffff;
+font-size: 18px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+color: #ffffff;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #999999;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+background-color: #111111;
+}
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {
+	opacity: .4
+}
+to {
+	opacity: 1
+}
+}
+@keyframes fade {
+from {
+	opacity: .4
+}
+to {
+	opacity: 1
+}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev,
+.next,
+.text {
+	font-size: 11px
+}
+}

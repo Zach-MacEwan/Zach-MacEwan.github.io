@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title> Zach's Page</title>
+    </head>
+    <body>
+        <canvas id="canv" style="position: absolute ; z-index: -1;"></canvas>
+        <header class="container-fluid">
+            <!--image and link to home page. image taken from http://cdn.onlinewebfonts.com/svg/img_388047.png --> 
+            <div class="container">
+                <div class="row" id="logo">
+                    <a href="../index.html">
+                        <img src="../images/Z.png" alt="Home" width="30" height="30" style="background-color: lime;">
+                    </a>
+                    <nav class="right-align">
+                        <ul class="nav-link">
+                            <li><a href="https://familyguy.fandom.com/wiki/Main_Page">Family Guy</a></li>
+                            <li><a href="https://familyguy.fandom.com/wiki/Al_Harrington">Al Harrington</a></li>
+                            <li><a href="https://familyguy.fandom.com/wiki/Danny_Smith">Voice Actor</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Al_Harrington">NBA</a></li>
+                            <li id="facebook-icon"><a href="https://www.facebook.com/people/Al-Harrington/100075674157126/" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
+					        <li id="twitter-icon"><a href="https://twitter.com/familyguyonfox/status/675404756685295616?lang=en" target="_blank"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
+                            <li id="youtube-icon"><a href="https://www.youtube.com/watch?v=0Gz3Z0a_oS8" target="_blank"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="youtube"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid" id="hero">
+			<div class="container">
+				<div class="row">
+
+					<section id="hero-chunk">
+						<h1 class="tighten">Wacky Waving Inflatable Arm Flailing Tube Man</h1>
+						<h4 class="tighten">Wacky Waving Inflatable Arm Flailing Tube Man. Wacky Waving Inflatable Arm Flailing Tube Man. Wacky Waving Inflatable Arm flailing Tube Mn.</h4>
+						<a class="CTA" href="./interior.html">Wacky Waving Inflatable Arm Flailing Tube Men</a>
+					</section>
+					
+				</div>				
+			</div>
+		</section>
+        
+		<section class="container-fluid" id="mission">
+            <img src="https://static.wikia.nocookie.net/familyguy/images/1/1a/Al.png/revision/latest?cb=20081102155229" id="al1">
+			<h2 class="tighten">Wacky Waving Inflatable Arm-Flailing Tubeman!</h2>
+			<p>Hi, I'm Al Harrington, President and CEO of Al Harrington's Wacky Waving Inflatable Arm Flailing Tube Man Emporium and Warehouse! Thanks to a shipping error I am now currently overstocked on wacky waving inflatable arm flailing tube men, and I am passing the savings on to you!</p>
+            <img src="https://static.wikia.nocookie.net/familyguy/images/1/1a/Al.png/revision/latest?cb=20081102155229" id="al2">
+        </section>
+		
+
+		<section id="cards">
+            <section class="container" id="slides">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="./images/carousel1.jpg" style="width:100%">
+                        <div class="text">Attract customers to your business!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="./images/carousel2.jpg" style="width:100%">
+                        <div class="text">Make a Splash at your next presentation!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="./images/carousel3.jpg" style="width:100%">
+                        <div class="text">Keep grandma company!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="./images/carousel4.jpg" style="width:100%">
+                        <div class="text">protect your crops!</div>
+                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="./images/carousel5.jpg" style="width:100%">
+                        <div class="text">Confuse your neighbours!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="./images/carousel6.jpg" style="width:100%">
+                        <div class="text">Hail a taxi!</div>
+                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="./images/carousel7.jpg" style="width:100%">
+                        <div class="text">Testify in church!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="./images/carousel8.jpg" style="width:100%">
+                        <div class="text">Or just plain raise the roof!</div>
+                    </div>
+                        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                </div>
+            </section>
+            <div id="map">
+                <div>
+                    <img src="images/amazon.jpg" alt="Pencil product shown drawing a building">
+                </div>
+                <div class="card-chunk">
+                    <h2>Pencil<br><span>Think with your hands</span></h2>
+                    <p>The most natural and expressive tool for getting ideas on Paper. Rest your hand comfortably on the screen and draw, erase, and blend with ease.</p>
+                    <a>Buy Pencil on Amazon</a>
+                </div>
+            </div>
+	
+		</section>
+
+
+		<section class="container-fluid" id="products">
+            <footer>
+                <ul id="product-grid">
+                    <li><a>Wacky Waving Inflatable Arm Flailing Tube Man<br><p>Wacky Waving Inflatable Arm Flailing Tube Man</p></a></li>
+                    <li><a>Wacky Waving Inflatable Arm Flailing Tube Man<br><p>Wacky Waving Inflatable Arm Flailing Tube Man</p></a></li>
+                    <li><a>Wacky Waving Inflatable Arm Flailing Tube Man<br><p>Wacky Waving Inflatable Arm Flailing Tube Man</p></a></li>
+                    <li><a>Wacky Waving Inflatable Arm Flailing Tube Man<br><p>Wacky Waving Inflatable Arm Flailing Tube Man</p></a></li>
+                </ul>
+            </footer>
+		</section>
+
+		<section id="newsletter">
+			<div class="row"></div>
+			<div class="row"></div>
+		</section>
+
+        <script>
+            // code taken from https://www.w3docs.com/tools/code-editor/3720 and modified
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if(slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+            }
+          </script>
+    </body>
+</html>
