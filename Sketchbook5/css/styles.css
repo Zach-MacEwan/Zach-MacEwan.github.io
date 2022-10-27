@@ -1,0 +1,60 @@
+/* Let's create a clearly marked part of our CSS file to 
+put down all the high level and universally applied properties
+*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* The most representative style of your type shold be established
+ first. Then you can change it with sp[ecificity later.
+*/
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: blueviolet ;
+}
+
+/* layout styling */
+header {
+    background-color: black;
+}
+header img {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: lime;
+}
+.card {
+    width: 90vw;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+td .btn {
+    background-color: blueviolet;
+}
+td .btn:hover {
+    background-color: black;
+    border-color: black;
+}
