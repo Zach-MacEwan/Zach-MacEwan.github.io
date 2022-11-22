@@ -664,7 +664,7 @@ div#sixteen2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
-	height: 30vh;
+	height: 28vh;
 	width: 90vw;
 	margin: 0 auto;
 	column-gap: 2vw;
@@ -699,37 +699,46 @@ div#sixteen2 {
 	overflow: hidden;
 	background-image: url(../images/backg_Green.jpg);
 }
-/* Media section for mid sized screens */
+/* Media section for mid sized screens (Laptop sized) */
+/* tested on 1496 x 900 px */
 @media screen  and (max-height: 996px) {
 	#hero3 {
 		background-position: -300px 40px;
 		height: 75vh;
 	} 
 	#crafted {
-		height: 65vh;
+		height: 69vh;
 		margin-top: 8vh;
-		padding: 50px 100px;
+		padding: 30px 80px;
 	}
 	#crafted h2 {
 		margin: 4vh 0 2vh;
 	}
-	
 	#map {
 		width: 95vw;
-		height: 102vh;
+		height: 99vh;
 		margin: 0 auto;
 		margin-top: 30vh;
 		padding: 1rem;
+	}
+	#map h3 {
+		position: absolute;
+		right: 650px;
+		bottom: 8px;
 	}
 	#over {
 		margin-top: -123vh;
 	}
 	div#sixteen2 {
-		margin-top: 46vh;
+		margin-top: 25vh;
+	}
+	.pgrid {
+		height: 42vh;
 	}
 
 }
-/* media section for "small" (laptop) sized screens */
+/* media section for "smaller" sized screens */
+/* tested on 1496 x 666 px */
 @media screen  and (max-height: 700px) {
 	#hero3 {
 		background-position: -200px 50px;
