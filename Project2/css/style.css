@@ -569,7 +569,7 @@ div#sixteen {
 	background-color: #fff;
 	color: #161616;
 	width: 95vw;
-	height: 91vh;
+	height: 94vh;
 	margin: 0 auto;
 	margin-top: 30vh;
 	border-radius: 20px;
@@ -583,8 +583,7 @@ div#sixteen {
 	transform: translate(0,-50vh);
 	transition: 3s;
 }
-#map h4 {
-	font-size: 30px;
+#map h3 {
 	color: #161616;
 	position: absolute;
 	right: 900px;
@@ -717,14 +716,16 @@ div#sixteen2 {
 	
 	#map {
 		width: 95vw;
-		height: 97vh;
+		height: 102vh;
 		margin: 0 auto;
 		margin-top: 30vh;
 		padding: 1rem;
 	}
-	
+	#over {
+		margin-top: -123vh;
+	}
 	div#sixteen2 {
-		margin-top: 37vh;
+		margin-top: 46vh;
 	}
 
 }
@@ -751,7 +752,7 @@ div#sixteen2 {
 		margin-top: 30vh;
 		padding: 1.2rem;
 	}
-	#map h4 {
+	#map h3 {
 		position: absolute;
 		right: 600px;
 		bottom: 8px;
