@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>53 redo Homepage</title>
+    <!-- Tab Title and Icon -->
+    <title>53 Pencil</title>
+    <link rel="shortcut icon" href="images/We53Logo1.svg"/>
+    <!-- Normalize Style Sheet -->
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- One of the fonts we use is Poppins. I went to Google Fonts and copy&pasted the text for Poppins into my code. I also need the font family syntax for my CSS:
-    font-family: 'Poppins', sans-serif;
-     -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Code Script to create and run the Magnifying glass -->
     <script>
       function magnify(imgID, zoom) {
       var img, glass, w, h, bw;
@@ -71,14 +75,17 @@
       }
     </script>
   </head>
+  <!-- Here starts the content that is on the page -->
   <body>
     <header class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+          <!-- This is where we are putting our logo -->
+          <div class="col-md-2" id="logo"> 
             <a href="index.html"><img src="images/We53Logo1.svg" alt="We53 Logo"></a>
           </div>
-          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
+          <!-- This is our header navigation bar links section -->
+          <nav class="col-md-7 offset-md-3"> 
             <ul>
               <li ><a href="./pencil.html"class="undl">Pencil</a></li>
               <li><a href="./about.html">About Us</a></li>
@@ -89,18 +96,22 @@
         </div>
       </div>
     </header>
+    <!-- Hero section 3: pencils -->
     <div class="container-fluid cssgrid" id="hero3">
       <div id="peninfo">
+        <!-- Hero Text -->
         <h1 class="tighten">No. 2 Pencil.</h1>
         <h5 class="tighten">Sharper Than Ever.</h5>
         <a href="#" class="CTA">Buy Now</a>
       </div>
    </div>
 
-
+  <!-- Card section for the Crafted text and images -->
    <div id="crafted">
-      <div class="card-chunk">
-        <h2>Crafted For Creativity. Made For Tax Forms.</h2>
+    <!-- Text Section on Left -->
+      <div>
+        <h2>Crafted For Creativity. <br>
+          Made For Tax Forms.</h2>
        <p>
         Sharp minds require sharp tools. No. 2 Pencil's wood body forms a perfectly cylindrical case for graphite, 
         the part that leaves its mark on the page when you show it what to do. 
@@ -112,21 +123,28 @@
         Smudge with your finger or side of your hand to get dirty. Chiaroscuro never felt so good.
         </p>
       </div>
-      <div class="card-chunk">
+      <!-- Image on Right -->
+      <div >
         <img src="./images/pencil_eye.jpg" alt="Pencil drawn eye">
       </div>
     </div>
 
+    <!-- Next Section for the Map and Overlay Card-->
     <section class="container-fluid" id="">
+      <!-- Create the Map card and magnifying box first -->
       <div id="map">
         <div class="card-chunk">
           <div class="img-magnifier-container">
             <img id="myimage" src="images/dimitrisanastasiou-wepresent8_pencil_BKG.webp" alt="man flying over world">
+            <!-- Text on the bottom of the image -->
+            <h4>Hover For More</h4>
             <h6>Dimitris Anastasiou</h6>
           </div>
         </div>
       </div>
+      <!-- Underneath the Map create the section to overlay. we will move it up on top using CSS-->
       <div id="over">
+        <!-- 3 identical sections for the text -->
         <div class="card-chunk">
           <h2>Look Sharp</h2>
           <p>
@@ -148,49 +166,39 @@
             the leading authority on standardized test bubble sheets.
           </p>
         </div>
+        <!-- Pencil is in row 2 and will cover all 3 columns of text -->
         <div id="sidepen">
           <img src="./images/pencil_side2.jpg">
         </div>
       </div>
     </section>
-    
-   <div class="pencilgrid" id="sixteen2">
+    <!-- Card section for final 3 cards on the page -->
+    <div id="sixteen2">
      <div class="pgrid" id="pointcard">
       <div id="point1">
-        <h2>Surface Pressure</h2>
+        <h2>School Bus Yellow</h2>
         <p>
-          Expressive from every angle. Pencil's unique tip is shaped to create lines of all sizes without any settings. 
-          Use the point for fine details and the angled edge for broad strokes.
+          A writing tool for the masses. 
+          Each No. 2 Pencil has a unique wooden pattern completely concealed by our signature yellow paint inspired by your kid's ride to school.
+          This model is widely available in the US.
         </p>
       </div>
       <div id="point2">
-        <h2>Erase</h2>
-        <p>
-          Be bold and make mistakes. Pencil's unique built-in eraser lets you precisely carve away to get at what's essential. 
-          No need to switch tools, just flip Pencil to erase.
-        </p>
+        <h2>Introductory Pricing for a Limited Time</h2>
+        <br>
+        <a href="#" class="CTA">Buy Now</a>
       </div>
       <div id="point3">
-        <h2>Blend</h2>
+        <h2>Brunswick Green</h2>
         <p>
-          Get hands-on with your ideas. Pencil takes care of the lines so you can use your finger to smooth rough edges and 
-          blend colors directly on the page. Create beautiful color transitions for charts, skies, and shadows.
-
-        </p>
-      </div>
-      <div id="point4">
-        <h2>Palm Rejection</h2>
-        <p>
-          Our adaptive palm rejection instantly knows whether it's your hand or Pencil touching the page. 
-          Rest your hand on the screen, write from any angle. No calibration or setup. You'll forget you're creating on a tablet.
-
+          Minimal, beautiful and just a little more European than the School Bus Yellow model. Also known to come in blue, black and even red. 
+          Not all countries use yellow pencils, you know.
         </p>
       </div>
      </div>
    </div>
 
-
-   <!--Script for Magnifying the Image-->
+   <!--Script to call and start the magnification of the map -->
    <script>
         /* Initiate Magnify Function
         with the id of the image, and the strength of the magnifier glass:*/
@@ -199,8 +207,7 @@
    
 
     <!-- Below here is the Footer code. This should be same on each of your pages 
-    *********************************************************
-    --> 
+    *********************************************************--> 
 
     <footer class="container-fluid">
       <div class="container">

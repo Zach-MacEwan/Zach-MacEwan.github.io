@@ -117,10 +117,6 @@ a {
 	font-family: 'Poppins';
 }
 
-a:hover {
-
-}
-
 ul {
 	list-style-type: none;
 }
@@ -130,7 +126,6 @@ ul {
 }
 
 /* header styles and rules */
-
 header {
 	background-color: #153b84;
 	color: #fff;
@@ -144,12 +139,10 @@ header {
 	fill:  whitesmoke;
 }
 
-/* 
 header li {
-	float: left;
-	margin-left: 18px;
+	padding: 3px 1rem 0 1rem;
 }
-*/
+
 #logo a {
 	display: inline-block;
 	padding: 1rem;
@@ -166,6 +159,19 @@ header li {
 	border-radius: 30px;
 	width: 310px;
 }
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 11px;
+}
+/* styling for the active page. i.e. underline and hover effect */
 .undl {
 	border-color: #fff;
 	border-bottom: 3px solid;
@@ -176,17 +182,6 @@ header li {
 	border-color: #fff;
 	border-radius: 30px;
 	transition: 0.5s;
-}
-#search a {
-	line-height: 100px;
-}
-
-header ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 15px;
 }
 
 /* homepage hero styles and rules */
@@ -260,9 +255,7 @@ but it doesn't have any content*/
 	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-
 /* Homepage product feature styles and rules */
-
 #feature {
 	margin-top: -470px;
 }
@@ -355,10 +348,8 @@ a.CTAtoo:hover {
 }
 
 #illust img{
-	
 	position: absolute;
 	z-index: -2;
-
 }
 
 #product-grid {
@@ -392,30 +383,16 @@ a.CTAtoo:hover {
 }
 
 /*********************
-
-/* About Page styles and rules 
-
+About Page styles and rules 
 *******************/
-
+/* Styling for Hero image */
 #hero2 {
 	background-image: url("../images/hero2.jpg");
 	background-size: cover;
 	background-color: red;
 	height: 55vh;
 }
-
-div#sixteen {
-	position: relative;
-	z-index: 1;
-}
-
-.cssgrid {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(7, 1fr);
-	height: 80vh;
-}
-
+/* Who We Are text */
 #main {
 	grid-column-start: 2;
 	grid-column-end: 6;
@@ -430,10 +407,10 @@ div#sixteen {
 }
 #main section {
 	display: inline;
-	/*color: #c2402f;*/
 	font-family: "GT-Super";
 }
 
+/* Styling for the Fixed Hello section on the left */
 #hello {
 	position: fixed;
 	left: 7vw;
@@ -445,14 +422,29 @@ div#sixteen {
 }
 #hello section {
 	display: inline;
-	/*color: #c2402f;*/
 	font-family: "GT-Super";
 }
+
+/* Styling for the rest of the content */
+div#sixteen {
+	position: relative;
+	z-index: 1;
+}
+/* Body for the page. setting background image and sizing */
 #content {
 	background-image: url(../images/test_bkg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 70px;
 }
+/* grid sections for the two card sections */
+.cssgrid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	height: 80vh;
+}
+/* two Why Cards and text rules */
 #whycard {
 	grid-column-start: 4;
 	grid-column-end: 7;
@@ -481,7 +473,7 @@ div#sixteen {
 	overflow: hidden;
 	z-index: 1;
 }
-
+/* What cards and text styling*/
 #whatcard {
 	grid-column-start: 4;
 	grid-column-end: 7;
@@ -512,20 +504,35 @@ div#sixteen {
 	overflow: hidden;
 	z-index: 1;
 }
+/* styling rules for when page gets large*/
+@media screen  and (min-height: 831px) { 
+	.cssgrid {
+		height: 70vh;
+	}
 
-/*********************
+	#whycard2 {
+		padding-top: 10vh;
+	}
 
-/* Pencil Page styles and rules
+	#whatcard2 {
+		grid-row-end: 7;
+		padding-top: 10vh;
+	}
 
-*******************/
+}
 
+/****************************
+ Pencil Page styles and rules
+*****************************/
+/* Hero Image*/
 #hero3 {
 	background-image: url("../images/hero-1.jpg");
 	background-size: cover;
 	background-color: red;
-	background-position: -300px;
+	background-position: -350px 50px;
 	height: 75vh;
 }
+/* Hero Text*/
 #peninfo {
 	grid-column-start: 2;
 	grid-column-end: 6;
@@ -538,28 +545,31 @@ div#sixteen {
 	font-weight: 400;
 	line-height: 3rem;
 }
-
+/* Crafted card styling*/
 #crafted {
 	background-color: #fff;
 	color: #161616;
 	width: 95vw;
-	height: 70vh;
+	height: 60vh;
 	margin: 0 auto;
-	margin-top: 10vh;
+	margin-top: 2vh;
 	border-radius: 20px;
-	padding: 100px;
+	padding: 50px 100px;
 	display: grid;
 	grid-template-columns: 4fr 6fr;
-	column-gap: 30px;
+	column-gap: 3vw;
 	overflow: hidden;
 	z-index: 4;
 }
-
+#crafted h2 {
+	margin: 6vh 0 2vh;
+}
+/* Map layout and styling*/
 #map {
 	background-color: #fff;
 	color: #161616;
 	width: 95vw;
-	height: 90vh;
+	height: 91vh;
 	margin: 0 auto;
 	margin-top: 30vh;
 	border-radius: 20px;
@@ -568,10 +578,18 @@ div#sixteen {
 	z-index: 2;
 	position: relative;
 }
-
+/* hover effect to move the Over up*/
 #map:hover ~ #over{
 	transform: translate(0,-50vh);
 	transition: 3s;
+}
+#map h4 {
+	font-size: 30px;
+	color: #161616;
+	position: absolute;
+	right: 900px;
+	bottom: 10px;
+	z-index: 3;
 }
 #map h6 {
 	font-size: 10px;
@@ -581,6 +599,27 @@ div#sixteen {
 	bottom: 0px;
 	z-index: 3;
 }
+/* Required CSS for the Magnifying Glass code to function */
+#myimage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+.img-magnifier-container {
+	position:relative;
+}
+/* Required CSS and styling of the Magnifying glass */
+.img-magnifier-glass {
+	position: absolute;
+	border: 3px solid #c2402f;
+	border-radius: 50%;
+	cursor: none;
+	/*Set the size of the magnifier glass:*/
+	width: 200px;
+	height: 200px;
+}
+/* Over card styling and positioning*/
 #over {
 	background-color: #161616;
 	color: #fff;
@@ -599,121 +638,147 @@ div#sixteen {
 	z-index: 3;
 	position: relative;
 }
-
+/* Hover effect for text in the Over card*/
 #over a:hover{
 	color: #c2402f;
 }
+/* ensure the pencil covers all columns*/
 #sidepen {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 2;
 }
-#myimage {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	object-position: center;
-  }
-  .img-magnifier-container {
-	position:relative;
-  }
-  
-  .img-magnifier-glass {
-	position: absolute;
-	border: 3px solid #c2402f;
-	border-radius: 50%;
-	cursor: none;
-	/*Set the size of the magnifier glass:*/
-	width: 200px;
-	height: 200px;
-  }
 
+/* section and spacing for cards below the Map */
 div#sixteen2 {
-	margin-top: 40vh;
+	margin-top: 44vh;
 	position: relative;
 	z-index: 1;
 }
 
-.pencilgrid {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: repeat(7, 1fr);
-	height: 80vh;
-	width: 95vw;
-	margin: 0 auto;
-
-}
-
 #pointcard {
-	grid-column-start: 1;
-	grid-column-end: 8;
-	grid-row-start: 1;
-	grid-row-end: 7;
-	/*background-color: #161616;
-	border-radius: 3rem;*/
-	color: #fff;
 	padding: 50px;
-	text-align: right;
 	overflow: hidden;
-	
 }
+/* Grid for the final 3 cards */
 .pgrid {
 	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
-	height: 80vh;
-	width: 95vw;
+	height: 30vh;
+	width: 90vw;
 	margin: 0 auto;
+	column-gap: 2vw;
 }
 #point1 {
 	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 4;
-	background-color: #fff;
+	background-color: #161616;
 	border-radius: 3rem;
-	color: #161616;
+	color: #fff;
 	padding: 15px;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
+	background-image: url(../images/backg_Yellow.jpg);
 }
 #point2 {
-	grid-column-start: 5;
-	grid-column-end: 8;
-	grid-row-start: 1;
-	grid-row-end: 4;
+	grid-column-start: 2;
 	background-color: #fff;
 	border-radius: 3rem;
 	color: #161616;
 	padding: 15px;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
 }
+
 #point3 {
-	grid-column-start: 7;
-	grid-column-end: 10;
-	grid-row-start: 4;
-	grid-row-end: 7;
-	background-color: #fff;
-	border-radius: 3rem;
-	color: #161616;
-	padding: 15px;
-	text-align: left;
-	overflow: hidden;
-}
-#point4 {
 	grid-column-start: 3;
-	grid-column-end: 6;
-	grid-row-start: 4;
-	grid-row-end: 7;
-	background-color: #fff;
+	background-color: #161616;
 	border-radius: 3rem;
-	color: #161616;
+	color: #fff;
 	padding: 15px;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
+	background-image: url(../images/backg_Green.jpg);
 }
+/* Media section for mid sized screens */
+@media screen  and (max-height: 996px) {
+	#hero3 {
+		background-position: -300px 40px;
+		height: 75vh;
+	} 
+	#crafted {
+		height: 65vh;
+		margin-top: 8vh;
+		padding: 50px 100px;
+	}
+	#crafted h2 {
+		margin: 4vh 0 2vh;
+	}
+	
+	#map {
+		width: 95vw;
+		height: 97vh;
+		margin: 0 auto;
+		margin-top: 30vh;
+		padding: 1rem;
+	}
+	
+	div#sixteen2 {
+		margin-top: 37vh;
+	}
+
+}
+/* media section for "small" (laptop) sized screens */
+@media screen  and (max-height: 700px) {
+	#hero3 {
+		background-position: -200px 50px;
+		height: 75vh;
+	} 
+	#crafted {
+		height: 69vh;
+		margin: 0 auto;
+		margin-top: 4vh;
+		padding: 0 100px;
+	}
+	#crafted h2 {
+		margin-top: 4vh;
+	}
+	#crafted img {
+		margin-top: 4vh;
+	}
+	#map {
+		height: 108vh;
+		margin-top: 30vh;
+		padding: 1.2rem;
+	}
+	#map h4 {
+		position: absolute;
+		right: 600px;
+		bottom: 8px;
+	}
+	#map h6 {
+		font-size: 12px;
+	}
+	#over {
+		height: 520px;
+		padding: 10px 70px;
+		margin-top: -130vh;
+		column-gap: 30px;
+	}
+	#over h2 {
+		margin: 10px 0;
+	}
+	#over p {
+		margin: 5px;
+	}
+	div#sixteen2 {
+		margin-top: 52vh;
+	}
+	.pgrid {
+		height: 48vh;
+	}
+}
+
 
 /* Footer styles and rules */
 
@@ -736,7 +801,6 @@ footer h4 {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
 	margin-bottom: 30px;
 	padding: 0 5%;
 }
@@ -753,8 +817,6 @@ footer li {
 	font-size: 14px;
 	padding-bottom: 15px;
 }
-
-
 
 #foot-links {
 	margin-top: 40px;
