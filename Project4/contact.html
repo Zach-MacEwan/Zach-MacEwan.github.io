@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The title of the site -->
+    <title>Ptarmigan</title>
+    <link rel="shortcut icon" href=""/>
+
+    <!-- The normalize file first to get rid of all the pesky default properties -->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+
+    <!-- Here is the Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- These are the Fonts used -->
+
+
+     <!-- last is the stylesheet that we want to connect to. This comes last in so that our instructions in the style.css file don't get over-written by other files.-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <!-- Here starts the code that will show up in the browser -->
+  <body>
+    <!-- The header section -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+          <a href="index.html"> <img src="images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
+        </div>
+        <nav class="col-md-7"> <!-- This is our header navigation bar links section -->
+          <ul>
+            <li> <a href="./index.html"> Home</a></li>
+            <li> <a href="./index.html#projects"> Projects</a></li>
+            <li> <a href="./index.html#process"> Process</a></li>
+            <li> <a href="./index.html#aboutus"> About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contact">
+      <a href="./contact.html" ></a>
+      <img src="./images/hammer_icon.png" alt="Contact Us">
+    </section>
+    <!-- The Hero section at the top of the page -->
+
+
+    <section class="container-fluid" id="feature">
+        <div id="Form">
+          <div class=''>
+            <h1>Tell Us About Your Project</h1>
+            <p>
+                At Ptarmigan we want to help you create the project of your dreams. 
+                Help us do that by answering some of our questions about your project 
+                and we will do what we can to help bring it to life
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    What kind of project are you looking for?
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dining Table and Chairs</a></li>
+                    <li><a class="dropdown-item" href="#">Custom Closet</a></li>
+                    <li><a class="dropdown-item" href="#">Armoire or dresser</a></li>
+                    <li><a class="dropdown-item" href="#">A pair of end tables</a></li>
+                    <li><a class="dropdown-item" href="#">A nightstand</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">A Different Item</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    What timeline do you have for your project?
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Within the month</a></li>
+                    <li><a class="dropdown-item" href="#">A few months</a></li>
+                    <li><a class="dropdown-item" href="#">The next 6 months</a></li>
+                    <li><a class="dropdown-item" href="#">The next Year</a></li>
+                    <li><a class="dropdown-item" href="#">As Long as it Takes</a></li>
+                </ul>
+            </div>
+            <div id="budget">
+                <p> What is your Budget for your project? <span> $</span></p> 
+                <input class="form-control form-control-sm" type="number" placeholder="MIN" aria-label=".form-control-sm example"> 
+                <p>to</p> 
+                <input class="form-control form-control-sm" type="number" placeholder="MAX" aria-label=".form-control-sm example">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">What else should we know about your project?</label>
+                <textarea class="form-control"  id="exampleFormControlTextarea1" rows="10"
+                placeholder="Tell us everything else about your project. Where it goes, who it is for, your thoughts and ideas about it. The better idea we can get about what you want the more we can help bring it to life."></textarea>
+            </div>
+              <button type="button" class="btn btn-primary">Submit Creation</button>
+          </div>
+          <!-- Empty Div for spacing of the cards -->
+          <div></div>
+          <div>
+            <img src="./images/chairs.png" alt="Image of paper product showing a duck in an egg">
+          </div>
+        </div>
+        
+      </section>
+
+
+
+<!-- Below here is the Footer code. This should be same on each of your pages 
+*********************************************************--> 
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div id="foot-logo">
+        <a href="index.html"><img src="./images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
+      </div>
+    </div>
+    <div class="row" id="foot-links">
+      <div class="col">
+        <a href="#hero"> Home</a>
+      </div>
+      <div class="col">
+        <a href="#projects"> Projects</a>
+      </div>
+      <div class="col">
+        <a href="#process"> Process</a>
+      </div>
+      <div class="col">
+        <a href="#aboutus"> About Us</a>
+      </div>
+      <div class="col">
+        <a href="./contact.html"> Start Your Project</a>
+      </div>
+    </div>
+    <div class="row" id="contactus">
+      <div class="col" id="social">
+        <h5>Follow Ptarmigan</h5>
+        <a href="#"><img src="./images/icon-facebook.png"></a>
+        <a href="#"><img src="./images/icon-twitter.png"></a>
+      </div>
+      <div class="col">
+        <h5>9942 153 Ave <br> Edmonton AB. </h5>
+      </div>
+      <div class="col">
+        <h5>780-867-5309 </h5>
+        <h5>ptarmigan.wood@gmail.com </h5>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>

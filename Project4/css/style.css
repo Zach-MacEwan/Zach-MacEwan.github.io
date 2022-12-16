@@ -1,0 +1,701 @@
+/* Stylesheet for Ptarmigan
+
+Colors:
+White   #fff
+Black   #000
+Slate   #1A1A1A
+Gold    #BD9E71
+Green   #212E1C
+
+Monteserrat for main titles 
+Coromant Garamond for body text
+
+*/
+
+/* Visualizing the layout */
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* image rules */
+img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+/* Type Hierarchy */
+
+@font-face {
+    font-family: "CG-Bold";
+    src: url("../Fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+	font-family: "CG-Medium";
+	src: url("../Fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
+}
+
+@font-face {
+	font-family: "CG-Light";
+	src: url("../Fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+body {
+	font-family: "Montserrat";
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #1A1A1A;
+}
+
+h1 {
+	font-family: "CG-Bold";
+	font-size: 60px;
+	margin: 1;
+}
+
+h2 {
+	font-family: "CG-Bold";
+	font-size: 42px;
+	margin: 0;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "CG-Bold";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: "Montserrat";
+}
+a:hover {
+	color: #BD9E71;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* header styles and rules */
+header {
+	color: #fff;
+	position: relative;
+	height: 10vh;
+	z-index: 1;
+	font-size: 1.0em;
+}
+
+header li {
+	padding: 3px 1rem 0 1rem;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 10vw;
+	margin-top: 15px;
+}
+#logo img {
+	border-radius: 0;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 11px;
+}
+#contact {
+    position:fixed;
+	width:60px;
+	height:60px;
+	top:10px;
+	right:10px;
+	background-color:#BD9E71;
+	border-radius:50%;
+	text-align:center;
+    z-index: 2;
+}
+
+#contact:hover {
+    width: 140px;
+    height: 140px;
+    transition: 1s;
+}
+
+#contact .contact_img,
+#contact .contact_txt {
+    transition: opacity 0.5s ease-in-out;
+}
+#contact .contact_txt {
+    position:absolute; 
+    top:0;
+    left:0; 
+    opacity:0;
+	color: #000;
+}
+
+#contact:hover .contact_img {
+    opacity:0;
+}
+#contact:hover .contact_txt {
+    opacity:1;
+    text-align: center;
+    padding: 15px;
+	color: #000;
+}
+/* homepage hero styles and rules */
+
+#hero {
+	background-size: cover;
+	height: 90vh;
+}
+
+#hero video {
+    background-color: #1A1A1A;
+    width: 80%; 
+    height: auto; 
+	margin: -2vh 0 0 10vw;
+    background-size: contain;
+    overflow: hidden;
+}
+/* Homepage main content */
+
+/*Banner Stylings for the different Sections */
+.banner {
+	height: 20vh;
+	background-image: url(../images/dark_wood4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 1vh solid #BD9E71;
+}
+.banner h2 {
+	text-align: center;
+	font-size: 80px;
+	padding-top: 4vh;
+	color: #fff;
+}
+.background-layer{
+
+ }
+.wrap-layer{
+	position: relative;
+ }
+.text-layer{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+/* grid for each of the Projects */
+.cssgrid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	height: 80vh;
+	padding: 0 100px;
+}
+/*Project default setup*/
+#projects {
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.text {
+	font-size: 27px;
+	color: #fff;
+	display: grid;
+}
+
+.number h3{
+	font-size: 80px;
+	color: #fff;
+}
+.line svg{
+	color: #fff;
+	stroke: #fff;
+	stroke-width: 0.7vh;
+}
+
+.furniture {
+
+}
+
+/*Table section*/
+#txt1 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	padding-top: 2vh;
+	overflow: hidden;
+	z-index: 2;
+}
+#one {
+	grid-row-start: 4;
+	grid-column-start: 6;
+	z-index: 2;
+	padding-top: 4vh;
+	padding-left: 10px;
+}
+
+#line1 {
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 5;
+	overflow: hidden;
+	z-index: 2;
+}
+#table {
+	grid-column-start: 6;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 8;
+	overflow: hidden;
+	z-index: 1;
+}
+/*Dresser Section*/
+#txt2 {
+	grid-column-start: 6;
+	grid-column-end: 8;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	padding-top: 2vh;
+	overflow: hidden;
+	z-index: 2;
+}
+#two {
+	grid-row-start: 4;
+	grid-column-start: 4;
+	z-index: 2;
+	padding-top: 4vh;
+	padding-right: 0.5vw;
+	text-align: right;
+}
+#line2 {
+	grid-column-start: 4;
+	grid-column-end: 9;
+	grid-row-start: 5;
+	overflow: hidden;
+	z-index: 2;
+	padding-left: 8.5vw;
+}
+#dresser {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 8;
+	overflow: hidden;
+	z-index: 1;
+}
+/*Closet section*/
+#txt3 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	padding-top: 2vh;
+	overflow: hidden;
+	z-index: 2;
+}
+#three {
+	grid-row-start: 4;
+	grid-column-start: 6;
+	z-index: 2;
+	padding-top: 4vh;
+	padding-left: 10px;
+}
+
+#line3 {
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 5;
+	overflow: hidden;
+	z-index: 2;
+}
+#closet {
+	grid-column-start: 6;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 8;
+	overflow: hidden;
+	z-index: 1;
+}
+
+/*The Process Section*/
+#process {
+	overflow: hidden;
+	background-image: url(../images/tree-silhouette.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.largegrid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(13, 1fr);
+	height: 160vh;
+	padding: 0 100px;
+}
+.letter h3{
+	font-size: 80px;
+	color: #BD9E71;
+}
+.gold svg{
+	stroke: #BD9E71;
+	stroke-width: 0.7vh;
+}
+
+.planning {
+
+}
+
+/*A section*/
+#txtA {
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	overflow: hidden;
+	z-index: 2;
+	margin-top: 2.4vh;
+	margin-left: 2vw;
+}
+#AAA {
+	grid-column-start: 3;
+	grid-row-start: 3;
+	z-index: 0;
+	opacity: 50%;
+}
+
+#gold1 {
+	grid-column-start: 3;
+	grid-column-end: 10;
+	grid-row-start: 4;
+	overflow: hidden;
+	z-index: 1;
+	margin:	2vh 2vw;
+}
+#book {
+	grid-column-start: 8;
+	grid-column-end: 12;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	overflow: hidden;
+	z-index: 1;
+}
+/*B section*/
+#txtB {
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 7;
+	grid-row-end: 9;
+	overflow: hidden;
+	z-index: 2;
+	margin-top: 2.4vh;
+	margin-left: 2vw;
+}
+#BBB {
+	grid-column-start: 3;
+	grid-row-start: 7;
+	z-index: 0;
+	opacity: 50%;
+}
+
+#gold2 {
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 8;
+	overflow: hidden;
+	z-index: 1;
+	margin:	2vh 2vw;
+}
+#wood {
+	grid-column-start: 8;
+	grid-column-end: 12;
+	grid-row-start: 6;
+	grid-row-end: 9;
+	overflow: hidden;
+	z-index: 1;
+}
+/*A section*/
+#txtC {
+	grid-column-start: 3;
+	grid-column-end: 6;
+	grid-row-start: 11;
+	grid-row-end: 12;
+	overflow: hidden;
+	z-index: 2;
+	margin-top: 2.4vh;
+	margin-left: 2vw;
+}
+#CCC {
+	grid-column-start: 3;
+	grid-row-start: 11;
+	z-index: 0;
+	opacity: 50%;
+}
+
+#gold3 {
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 12;
+	overflow: hidden;
+	z-index: 1;
+	margin:	2vh 2vw;
+}
+#saw {
+	grid-column-start: 8;
+	grid-column-end: 12;
+	grid-row-start: 10;
+	grid-row-end: 13;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+/*About Us Section*/
+#aboutus {
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.aboutgrid {
+	color: #fff;
+	margin: 0 auto;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 4fr 1fr 4fr;
+	column-gap: 30px;
+	overflow: hidden;
+}
+.aboutgrid img {
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+}
+.aboutgrid p {
+	padding-top: 15vh;
+}
+#Testemonials {
+	background-image: url("../images/dark_wood2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 10vh;
+	color: #fff;
+	width: 100vw;
+	height: 55vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.carousel {
+	width: inherit;
+}
+.carousel-item {
+	height: 55vh;
+	position: relative;
+	text-align: center;
+}
+.carousel-item p {
+	font-size: 20px;
+}
+.bucket {
+	padding: 25vh;
+}
+
+.carousel-indicators [data-bs-target] {
+	height: 6px;
+	width: 60px;
+	background-color: #BD9E71;
+}
+
+/********************
+    Contact Us Form
+********************/
+
+#Form {
+	color: #fff;
+	width: 95vw;
+	height: 100vh;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 4fr 1fr 4fr;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+.btn-secondary {
+    background-color: #292929;
+    border-color: #BD9E71;
+    margin-top: 2vh;
+	padding: 0.8em;
+}
+.btn-secondary:hover {
+	background-color: #BD9E71;
+    border-color: #BD9E71;
+	color: #000;
+}
+.btn-primary {
+    background-color: #BD9E71;
+    border-color: #BD9E71;
+    margin-top: 2vh;
+	color: #000;
+	padding: 1rem;
+}
+.btn-primary:hover {
+	background-color: #292929;
+    border-color: #BD9E71;
+    color: #BD9E71;
+}
+#budget p {
+    display: inline-block;
+    margin: 3vh 0;
+    font-size: 20px;
+}
+#budget span {
+    color: #BD9E71;
+}
+.form-control-sm {
+    width: 7vw;
+	height: 3em;
+    display: inline;
+	color: #fff;
+}
+
+.form-control {
+    background-color: #292929;
+    border-color: #BD9E71;
+	color: #fff;
+	max-height: 35vh;
+}
+
+#Form img {
+    overflow: hidden;
+}
+/* Footer styles and rules */
+
+footer {
+	background-color: #212E1C;
+	color: #fff;
+	position: relative;
+    height: 55vh;
+    margin-top: 10vh;
+	text-align: center;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+footer li {
+	text-align: center;
+	padding-bottom: 15px;
+}
+#foot-logo {
+	max-width: 15vw;
+	height: auto;
+	margin: 5vh auto;
+}
+#foot-logo img {
+	border-radius: 0;
+}
+
+#foot-links {
+	margin: 3vh 0;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 11px;
+}
+
+#social h5{
+	margin: 0;
+}
+#social img {
+	max-width: 26px;
+	justify-content: space-between;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
+}

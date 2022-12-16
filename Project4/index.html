@@ -26,33 +26,322 @@
   <body>
     <!-- The header section -->
     <header class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
-            <a href="index.html"><img src="" alt="Ptarmigan Logo"></a>
-          </div>
-          <nav class="col-md-7 offset-md-3"> <!-- This is our header navigation bar links section -->
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </nav>
+      <div class="row">
+        <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+          <a href="index.html"> <img src="images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
         </div>
+        <nav class="col-md-7"> <!-- This is our header navigation bar links section -->
+          <ul>
+            <li> <a href="#hero"> Home</a></li>
+            <li> <a href="#projects"> Projects</a></li>
+            <li> <a href="#process"> Process</a></li>
+            <li> <a href="#aboutus"> About Us</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <div id="contact">
+      <a href="./contact.html">
+        <img src="./images/hammer_icon.png" class="contact_img" />
+        <div class="contact_txt">Start Your Project</div>
+      </a>
+  </div>
     <!-- The Hero section at the top of the page -->
-    <div id="hero">
-    > 
+    <div class="container-fluid" id="hero" >
+        <video src="./images/pexels-tima-miroshnichenko-6789575.mp4" controls></video>        
     </div>
+    <div id="content">
+      <div id="projects">
+        <div class="banner">
+            <h2> Projects</h2>
+        </div>
+        <!--Setting up layering to get everything to render properly
+            code inspiration taken from https://www.svgbackgrounds.com/svg-backgrounds-to-html/
+            for how to set up layers -->
+        <div class="wrap-layer">
+          <div class="text-layer">
+            <div class="cssgrid" id="proj1">
+              <!--Text Section-->
+              <div class="text" id="txt1">
+                <p>
+                  A mixture of custom metalworking and woodworking makes this table the centerpiece of your dining room.
+                </p>
+              </div>
+              <!--Number-->
+              <div class="number" id="one">
+                <h3>1</h3>
+              </div>
+              <!--the line-->
+              <div class="line" id='line1'>
+                <svg height="210" width="715">
+                  <line x1="0" y1="0" x2="900" y2="0" />
+                </svg>
+              </div>
+              <!--Image-->
+              <div class="furniture" id="table">
+                <img src="./images/table.png" alt="walnut and steel dining table">
+              </div>
+            </div>
+            <div class="cssgrid" id="proj2">
+              <!--Text Section-->
+              <div class="text" id="txt2">
+                <p>
+                  Wood custom picked to fit your space makes our dressers a perfect accent piece for your room.
+                </p>
+              </div>
+              <!--Number-->
+              <div class="number" id="two">
+                <h3>2</h3>
+              </div>
+              <!--the line-->
+              <div class="line" id='line2'>
+                <svg height="210" width="675">
+                  <line x1="0" y1="0" x2="700" y2="0"  />
+                </svg>
+              </div>
+              <!--Image-->
+              <div class="furniture" id="dresser">
+                <img src="./images/dresser.jpg" alt="custom wooden dresser">
+              </div>
+            </div>
+            <div class="cssgrid" id="proj3">
+              <!--Text Section-->
+              <div class="text" id="txt3">
+                <p>
+                  LED lighting inlayed into the woodworking turned this dark closet space into a dream walk-in closet. 
+                </p>
+              </div>
+              <!--Number-->
+              <div class="number" id="three">
+                <h3>3</h3>
+              </div>
+              <!--the line-->
+              <div class="line" id='line3'>
+                <svg height="210" width="715">
+                  <line x1="0" y1="0" x2="900" y2="0" />
+                </svg>
+              </div>
+              <!--Image-->
+              <div class="furniture" id="closet">
+                <img src="./images/closet.jpg" alt="Custom walk-in closet">
+              </div>
+            </div>
+          </div>
+          <div id="background-layer">
+            <!--SVG with gradient background-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1542.331" height="2388.711" viewBox="0 0 1542.331 2388.711">
+              <defs>
+                <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#bd9e71" stop-opacity="0.502"/>
+                  <stop offset="0.666" stop-color="#6c5a41" stop-opacity="0.6"/>
+                  <stop offset="1" stop-color="#806c51" stop-opacity="0.102"/>
+                </radialGradient>
+              </defs>
+              <path id="Background_Swirl" data-name="Background Swirl" d="M-9.768,1090.827c13.731-11.443,38.194,76.239,98.642,149.876,55.475,67.579,145.711,120.848,190.62,128.02,109.812,17.538,272.647-108.728,362.043-99.8,56.243,5.62,215.046,97.884,374.967,99.8,100.6,1.2,316.377-49.754,402.706,0,121.17,69.834,78.817,311.006,0,374.95-76.075,61.72-410.272,22.89-613.905,126.235-176.071,89.357-231.111,316.237-222.152,428.871,4.244,53.355,49.188,274.194,222.559,350.126,93.438,40.923,508.7-43.949,629.348,60.611,66.895,57.975,62.845,423.636-134.651,505.668-93.141,38.687-323.339-102.494-512.455-80.35C614.2,3155.179,580.764,3256.551,458.27,3324.685c-83.742,46.58-251.93-23.725-364.914,0C11.124,3341.953-33.5,3455.7-37.4,3472.272" transform="translate(10 -1060)" stroke="rgba(189,158,113,0.53)" stroke-width="10" fill="url(#radial-gradient)"/>
+            </svg>                                
+          </div>
+       </div>
+      </div>
 
+      <div id="process">
+        <div class="banner">
+          <h2>Process</h2>
+        </div>
+        <div class="largegrid">
+          <!--Text Section-->
+          <div class="text" id="txtA">
+            <p>
+              All of our projects use only the highest quality wood sourced locally from Alberta.
+              <br>
+              When you buy Ptarmigan you can be certain that it's going to last a lifetime.
+            </p>
+          </div>
+          <!--Number-->
+          <div class="letter" id="AAA">
+            <h3>A</h3>
+          </div>
+          <!--the line-->
+          <div class="gold" id='gold1'>
+            <svg height="210" width="800">
+              <line x1="0" y1="0" x2="900" y2="0" />
+            </svg>
+          </div>
+          <!--Image-->
+          <div class="planning" id="book">
+            <img src="./images/notebook_sketch.jpg" alt="man sketching in book">
+          </div>
+          <!--Text Section-->
+          <div class="text" id="txtB">
+            <p>
+              Each product is meticulously crafted by our team. 
+              We love what we do and we want that passion to come across in every cut of the wood.
+            </p>
+          </div>
+          <!--Number-->
+          <div class="letter" id="BBB">
+            <h3>B</h3>
+          </div>
+          <!--the line-->
+          <div class="gold" id='gold2'>
+            <svg height="210" width="800">
+              <line x1="0" y1="0" x2="900" y2="0" />
+            </svg>
+          </div>
+          <!--Image-->
+          <div class="planning" id="wood">
+            <img src="./images/wood_measure.jpg" alt="man sketching in book">
+          </div>
+          <!--Text Section-->
+          <div class="text" id="txtC">
+            <p>
+              *something something intro* our products will last a lifetime in your home.
+            </p>
+          </div>
+          <!--Number-->
+          <div class="letter" id="CCC">
+            <h3>C</h3>
+          </div>
+          <!--the line-->
+          <div class="gold" id='gold3'>
+            <svg height="210" width="800">
+              <line x1="0" y1="0" x2="900" y2="0" />
+            </svg>
+          </div>
+          <!--Image-->
+          <div class="planning" id="saw">
+            <img src="./images/tablesaw_cutting.jpg" alt="man sketching in book">
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div id="aboutus">
+        <div class="banner">
+          <h2>About Us</h2>
+        </div>
+        <div class="aboutgrid">
+          <div>
+            <img src="./images/theTeam.jpg" alt="Ptarmigan Team Planning">
+          </div>
+          <div></div>
+          <div>
+            <p>
+              Here at Ptarmigan we have been working in classic woodworking techniques for over 30 years. 
+              Our artisans have been learning how to blend classic style with modern techniques to create custom projects for all of our clients.
+              <br>
+              We strive to helping our clients bring their dream products into reality. 
+            </p>
+          </div>
+      </div>
+
+      </div>
+
+      <div id="Testemonials">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="bucket">
+                <p>
+                  Every day I wake up and use my closet I'm thankful that we chose Ptarmigan for this project. 
+                  This organizer has made my morning routine so much easier when I am in a rush to get ready for work. 
+                  I no longer dread having to decide what to wear because everything is easy to find. 
+                  I can see all my clothes and find everything I am looking for! 
+                </p>
+                <br>
+                <p> 
+                  - Alice, Custom Closet Organizer 2019
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bucket">
+                <p>
+                  PARAGRAPH 2
+                </p>
+                <p> 
+                  - Alice, Custom Closet Organizer 2019
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bucket">
+                <p>
+                  TESTEMONIAL 3
+                </p>
+                <p> 
+                  - Alice, Custom Closet Organizer 2019
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875" viewBox="0 0 34.875 34.875">
+              <path id="Icon_awesome-arrow-circle-left" data-name="Icon awesome-arrow-circle-left" d="M18,35.438A17.438,17.438,0,1,1,35.438,18,17.434,17.434,0,0,1,18,35.438Zm2.032-10.1L14.723,20.25H27.563a1.683,1.683,0,0,0,1.688-1.687V17.438a1.683,1.683,0,0,0-1.687-1.687H14.723l5.309-5.091a1.689,1.689,0,0,0,.028-2.412l-.773-.766a1.681,1.681,0,0,0-2.384,0L7.573,16.8a1.681,1.681,0,0,0,0,2.384l9.33,9.33a1.681,1.681,0,0,0,2.384,0l.773-.766A1.689,1.689,0,0,0,20.032,25.341Z" transform="translate(-0.563 -0.563)" fill="#bd9e71"/>
+            </svg>
+            
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875" viewBox="0 0 34.875 34.875">
+              <path id="Icon_awesome-arrow-circle-right" data-name="Icon awesome-arrow-circle-right" d="M18,.563A17.438,17.438,0,1,1,.563,18,17.434,17.434,0,0,1,18,.563Zm-2.032,10.1,5.309,5.091H8.438A1.683,1.683,0,0,0,6.75,17.438v1.125A1.683,1.683,0,0,0,8.438,20.25H21.277l-5.309,5.091a1.689,1.689,0,0,0-.028,2.412l.773.766a1.681,1.681,0,0,0,2.384,0l9.33-9.323a1.681,1.681,0,0,0,0-2.384L19.1,7.474a1.681,1.681,0,0,0-2.384,0l-.773.766a1.7,1.7,0,0,0,.028,2.419Z" transform="translate(-0.563 -0.563)" fill="#bd9e71"/>
+            </svg>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
 
 <!-- Below here is the Footer code. This should be same on each of your pages 
 *********************************************************--> 
 
     <footer class="container-fluid">
-      
+      <div class="container">
+        <div class="row">
+          <div id="foot-logo">
+            <a href="index.html"><img src="./images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
+          </div>
+        </div>
+        <div class="row" id="foot-links">
+          <div class="col">
+            <a href="#hero"> Home</a>
+          </div>
+          <div class="col">
+            <a href="#projects"> Projects</a>
+          </div>
+          <div class="col">
+            <a href="#process"> Process</a>
+          </div>
+          <div class="col">
+            <a href="#aboutus"> About Us</a>
+          </div>
+          <div class="col">
+            <a href="./contact.html"> Start Your Project</a>
+          </div>
+        </div>
+        <div class="row" id="contactus">
+          <div class="col" id="social">
+            <h5>Follow Ptarmigan</h5>
+            <a href="#"><img src="./images/icon-facebook.png"></a>
+            <a href="#"><img src="./images/icon-twitter.png"></a>
+          </div>
+          <div class="col">
+            <h5>9942 153 Ave <br> Edmonton AB. </h5>
+          </div>
+          <div class="col">
+            <h5>780-867-5309 </h5>
+            <h5>ptarmigan.wood@gmail.com </h5>
+          </div>
+        </div>
+      </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
