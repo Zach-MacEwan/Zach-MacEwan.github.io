@@ -170,13 +170,11 @@ header ul {
 	text-align:center;
     z-index: 2;
 }
-
 #contact:hover {
     width: 140px;
     height: 140px;
     transition: 1s;
 }
-
 #contact .contact_img,
 #contact .contact_txt {
     transition: opacity 0.5s ease-in-out;
@@ -188,7 +186,6 @@ header ul {
     opacity:0;
 	color: #000;
 }
-
 #contact:hover .contact_img {
     opacity:0;
 }
@@ -213,6 +210,21 @@ header ul {
     background-size: contain;
     overflow: hidden;
 }
+/*media screen done for 1280x720px*/
+@media screen  and (max-width: 1280px) { 
+	#hero {
+		height: 83vh;
+	}
+	
+	#hero video {
+		background-color: #1A1A1A;
+		width: 85%; 
+		height: auto; 
+		margin: -2vh 0 0 10vw;
+		background-size: contain;
+		overflow: hidden;
+	}
+}
 /* Homepage main content */
 
 /*Banner Stylings for the different Sections */
@@ -229,18 +241,43 @@ header ul {
 	padding-top: 4vh;
 	color: #fff;
 }
-.background-layer{
+@media screen  and (max-width: 1280px) { 
+	.banner {
+		height: 22vh;
+	}
+}
+#background-layer{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: inherit;
+	padding-bottom: 100%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+.svg-content { 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	size-adjust: cover;
+}
 
- }
 .wrap-layer{
 	position: relative;
- }
+	height: 300vh;
+}
 .text-layer{
 	position: absolute;
 	width: 100%;
 	height: auto;
 	top: 0;
 	left: 0;
+}
+@media screen  and (max-width: 1280px) { 
+	.wrap-layer{
+		height: 275vh;
+	}
 }
 /* grid for each of the Projects */
 .cssgrid {
@@ -252,7 +289,6 @@ header ul {
 }
 /*Project default setup*/
 #projects {
-	margin-bottom: 50px;
 	overflow: hidden;
 }
 .text {
@@ -308,6 +344,17 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
+@media screen  and (max-width: 1280px) { 
+	#txt1 {
+		grid-row-end: 7;
+	}
+	#one {
+		padding-top: 3.5vh;
+	}
+	#table {
+		grid-row-start: 3;
+	}
+}
 /*Dresser Section*/
 #txt2 {
 	grid-column-start: 6;
@@ -342,6 +389,20 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
+@media screen  and (max-width: 1280px) { 
+	#txt2 {
+		grid-row-end: 7;
+	}
+	#two {
+		padding-top: 3.5vh;
+	}
+	#line2 {
+		padding-left: 6.7vw;
+	}
+	#dresser {
+		grid-row-start: 3;
+	}
+}
 /*Closet section*/
 #txt3 {
 	grid-column-start: 3;
@@ -375,6 +436,17 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
+@media screen  and (max-width: 1280px) { 
+	#txt3 {
+		grid-row-end: 7;
+	}
+	#three {
+		padding-top: 3.7vh;
+	}
+	#closet {
+		grid-row-start: 3;
+	}
+}
 
 /*The Process Section*/
 #process {
@@ -383,6 +455,11 @@ header ul {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+}
+@media screen  and (max-width: 1280px) { 
+	#process {
+		background-position: center 10vh;
+	}
 }
 .largegrid {
 	display: grid;
@@ -438,6 +515,22 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
+@media screen  and (max-width: 1280px) { 
+	#txtA {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		margin-top: 3.4vh;
+		margin-left: 3.4vw;
+	}
+	#AAA {
+		grid-column-start: 2;
+		grid-row-start: 2;
+	}
+	#gold1 {
+		grid-column-start: 2;
+		margin:	2vh 3.4vw;
+	}
+}
 /*B section*/
 #txtB {
 	grid-column-start: 3;
@@ -472,7 +565,25 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
-/*A section*/
+@media screen  and (max-width: 1280px) { 
+	#txtB {
+		grid-column-start: 2;
+		grid-row-start: 6;
+		margin-top: 3.4vh;
+		margin-left: 3.4vw;
+	}
+	#BBB {
+		grid-column-start: 2;
+		grid-row-start: 6;
+	}
+	#gold2 {
+		grid-column-start: 2;
+		grid-row-start: 7;
+		margin-top:	6.4vh; 
+		margin-left: 3.4vw;
+	}
+}
+/*C section*/
 #txtC {
 	grid-column-start: 3;
 	grid-column-end: 6;
@@ -506,11 +617,28 @@ header ul {
 	overflow: hidden;
 	z-index: 1;
 }
-
+@media screen  and (max-width: 1280px) { 
+	#txtC {
+		grid-column-start: 2;
+		grid-row-start: 10;
+		margin-top: 3.4vh;
+		margin-left: 3.4vw;
+	}
+	#CCC {
+		grid-column-start: 2;
+		grid-row-start: 10;
+	}
+	
+	#gold3 {
+		grid-column-start: 2;
+		grid-row-start: 11;
+		margin-top:	6.4vh; 
+		margin-left: 3.4vw;
+	}
+}
 
 /*About Us Section*/
 #aboutus {
-	margin-bottom: 50px;
 	overflow: hidden;
 }
 .aboutgrid {
@@ -530,13 +658,29 @@ header ul {
 .aboutgrid p {
 	padding-top: 15vh;
 }
+@media screen  and (max-width: 1280px) { 
+	.aboutgrid {
+		padding: 50px;
+		grid-template-columns: 4fr 0.6fr 4fr;
+	}
+	.aboutgrid img {
+		width: 100%;
+		height: auto;
+		border-radius: 30px;
+	}
+	.aboutgrid p {
+		padding-top: 0;
+	}
+}
+
+/*Testemonials Section*/
 #Testemonials {
 	background-image: url("../images/dark_wood2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-y: 10vh;
+	background-position-y: -10vh;
 	color: #fff;
-	width: 100vw;
+	width: 100%;
 	height: 55vh;
 	margin: 0 auto;
 	overflow: hidden;
@@ -554,6 +698,11 @@ header ul {
 }
 .bucket {
 	padding: 25vh;
+}
+@media screen  and (max-width: 1280px) { 
+	.bucket {
+		padding-top: 21vh;
+	}
 }
 
 .carousel-indicators [data-bs-target] {
@@ -602,14 +751,17 @@ header ul {
     border-color: #BD9E71;
     color: #BD9E71;
 }
+#budget {
+	margin: 3vh 0;
+}
 #budget p {
     display: inline-block;
-    margin: 3vh 0;
     font-size: 20px;
 }
 #budget span {
     color: #BD9E71;
 }
+
 .form-control-sm {
     width: 7vw;
 	height: 3em;
@@ -627,6 +779,28 @@ header ul {
 #Form img {
     overflow: hidden;
 }
+@media screen  and (max-width: 1280px) { 
+	#Form {
+		height: 120vh;
+		padding: 10vh 6vw;
+		grid-template-columns: 4fr 1.2fr 4fr;
+		column-gap: 0;
+	}
+	#Form h1 {
+		font-size: 40px;
+	}
+
+	#Form p {
+		font-size: 15px;
+	}
+	.btn-secondary {
+		font-size: 15px;
+	}
+
+	.form-label {
+		font-size: 18px;
+	}
+}
 /* Footer styles and rules */
 
 footer {
@@ -637,7 +811,11 @@ footer {
     margin-top: 10vh;
 	text-align: center;
 }
-
+@media screen  and (max-width: 1280px) { 
+	footer {
+		height: 60vh;
+	}
+}
 footer h4 {
 	padding: 2rem;
 	font-family: "GT-Light";
