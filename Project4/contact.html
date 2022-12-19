@@ -27,23 +27,51 @@
     <!-- The header section -->
     <header class="container-fluid">
       <div class="row">
-        <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+        <div class="col-3" id="logo"> <!-- This is where we are putting our logo -->
           <a href="index.html"> <img src="images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
         </div>
-        <nav class="col-md-7"> <!-- This is our header navigation bar links section -->
-          <ul>
-            <li> <a href="./index.html"> Home</a></li>
-            <li> <a href="./index.html#projects"> Projects</a></li>
-            <li> <a href="./index.html#process"> Process</a></li>
-            <li> <a href="./index.html#aboutus"> About Us</a></li>
-          </ul>
-        </nav>
+        <div class="col-6" id="bigMenu">
+          <nav id="bigNav" > <!-- This is our header navigation bar links section -->
+            <ul>
+              <li> <a href="#hero"> Home</a></li>
+              <li> <a href="#projects"> Projects</a></li>
+              <li> <a href="#process"> Process</a></li>
+              <li> <a href="#aboutus"> About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--nav menu animation taken from https://codesandbox.io/s/agitated-tu-97n1i?file=/styles.css:1054-1070-->
+        <div class="col-2" id="mobileMenu">
+          <div id="navButton" onclick="myFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <nav id="navMenu" > <!-- This is our header navigation bar links section -->
+            <ul>
+              <li> <a href="#hero"> Home</a></li>
+              <li> <a href="#projects"> Projects</a></li>
+              <li> <a href="#process"> Process</a></li>
+              <li> <a href="#aboutus"> About Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-    <section id="contact">
-      <a href="./contact.html" ></a>
-      <img src="./images/hammer_icon.png" alt="Contact Us">
-    </section>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navMenu");
+        
+        if (x.style.display !== "inline-block") {
+          x.style.display = "inline-block";
+          navButton.classList.toggle('open');
+        } else {
+          x.style.display = "none";
+          navButton.classList.toggle('open');
+        }
+        
+      }
+    </script>
     <!-- The Hero section at the top of the page -->
 
 
@@ -104,7 +132,7 @@
           <!-- Empty Div for spacing of the cards -->
           <div></div>
           <div id="stools">
-            <img src="./images/chairs.png" alt="Image of paper product showing a duck in an egg">
+            <img src="./images/chairs.png" alt="Image of wooden stolls stacked on their sides">
           </div>
         </div>
         
@@ -120,38 +148,37 @@
           </div>
         </div>
         <div class="row" id="foot-links">
-          <div class="col">
+          <div class="col-sm">
             <a href="#hero"> Home</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#projects"> Projects</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#process"> Process</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#aboutus"> About Us</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="./contact.html"> Start Your Project</a>
           </div>
         </div>
         <div class="row" id="contactus">
-          <div class="col" id="social">
+          <div class="col-sm" id="social">
             <h5>Follow Ptarmigan</h5>
             <a href="#"><img src="./images/icon-facebook.png"></a>
             <a href="#"><img src="./images/icon-twitter.png"></a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <h5>110373-47 Faux St.<br> Edmonton AB. </h5>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <h5>780-654-7864 </h5>
             <h5>Hello@Ptarmiganwoods.com </h5>
           </div>
         </div>
       </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

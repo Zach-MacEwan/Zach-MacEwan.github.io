@@ -1,5 +1,4 @@
 /* Stylesheet for Ptarmigan
-
 Colors:
 White   #fff
 Black   #000
@@ -9,12 +8,7 @@ Green   #212E1C
 
 Monteserrat for main titles 
 Coromant Garamond for body text
-
 */
-
-/* Visualizing the layout */
-
-/* This section is for universal selections and rules */
 
 /* box model Fix */
 html {
@@ -151,14 +145,84 @@ header li {
 #logo img {
 	border-radius: 0;
 }
-
-header ul {
+#bigMenu ul{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 11px;
 }
+#mobileMenu {
+	display: none;
+}
+#navButton {
+	display: none;
+	margin: 0 auto;
+}
+#navButton div {
+  width: 35px;
+  height: 3px;
+  background-color: #BD9E71;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+header li:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+@media screen  and (max-width: 401px) { 
+	#bigMenu {
+		display: none;
+	}
+	#mobileMenu {
+		display: inline-block;
+		padding: 2vh 17vw;
+	}
+	#navMenu {
+		display: none;
+	}
+	#navMenu ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: #292929;
+		border: #BD9E71 solid 2px;
+		padding-left: 1vw;
+		margin: 0;
+		width: 40vw;
+	}
+	#logo a {
+		padding: 0;
+		max-width: 15vw;
+	}
+	#navButton {
+		display: block;
+		align-items: center;
+		margin-top: 15px;
+		cursor: pointer;
+	}
+}
+
 #contact {
     position:fixed;
 	width:60px;
@@ -168,7 +232,7 @@ header ul {
 	background-color:#BD9E71;
 	border-radius:50%;
 	text-align:center;
-    z-index: 2;
+    z-index: 5;
 }
 #contact:hover {
     width: 140px;
@@ -215,13 +279,27 @@ header ul {
 	#hero {
 		height: 83vh;
 	}
-	
 	#hero video {
 		background-color: #1A1A1A;
 		width: 85%; 
 		height: auto; 
 		margin: -2vh 0 0 10vw;
 		background-size: contain;
+		overflow: hidden;
+	}
+}
+
+/*media screen for 400x800px*/
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#hero {
+		height: 27vh;
+	}
+	#hero video {
+		background-color: #1A1A1A;
+		width: 100%; 
+		height: auto; 
+		margin: 0;
+		background-size: cover;
 		overflow: hidden;
 	}
 }
@@ -244,6 +322,16 @@ header ul {
 @media screen  and (max-width: 1280px) { 
 	.banner {
 		height: 22vh;
+	}
+}
+/*media screen for 400x800px*/
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	.banner {
+		height: 15vh;
+	}
+	.banner h2 {
+		font-size: 60px;
+		padding-top: 2vh;
 	}
 }
 #background-layer{
@@ -279,6 +367,20 @@ header ul {
 		height: 275vh;
 	}
 }
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#background-layer{
+		display: none;
+		position: relative;
+		width: 100%;
+		height: inherit;
+		padding-bottom: 100%; 
+		vertical-align: middle; 
+		overflow: hidden; 
+	}
+	.wrap-layer{
+		height: 217vh;
+	}
+}
 /* grid for each of the Projects */
 .cssgrid {
 	display: grid;
@@ -286,6 +388,15 @@ header ul {
 	grid-template-rows: repeat(8, 1fr);
 	height: 80vh;
 	padding: 0 100px;
+}
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	.cssgrid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		height: 72vh;
+		padding: 0 10px;
+	}
 }
 /*Project default setup*/
 #projects {
@@ -355,6 +466,41 @@ header ul {
 		grid-row-start: 3;
 	}
 }
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txt1 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 4;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		border-left: #BD9E71 solid 1vw;
+		overflow: inherit;
+	}
+	#one {
+		grid-row-start: 2;
+		grid-column-start: 6;
+		z-index: 2;
+		padding-top: 0;
+		padding-left: 10px;
+		margin-top: -3vh;
+	}
+	#line1 {
+		grid-column-start: 4;
+		grid-column-end: 9;
+		grid-row-start: 6;
+		overflow: hidden;
+		z-index: 2;
+	}
+	#table {
+		grid-column-start: 1;
+		grid-column-end: 9;
+		grid-row-start: 2;
+		grid-row-end: 8;
+		overflow: hidden;
+		z-index: 1;
+	}
+}
 /*Dresser Section*/
 #txt2 {
 	grid-column-start: 6;
@@ -403,6 +549,41 @@ header ul {
 		grid-row-start: 3;
 	}
 }
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txt2 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 4;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		border-left: #BD9E71 solid 1vw;
+		overflow: inherit;
+	}
+	#two {
+		grid-row-start: 2;
+		grid-column-start: 6;
+		z-index: 2;
+		padding-top: 0;
+		padding-left: 10px;
+		margin-top: -3vh;
+	}
+	#line2 {
+		grid-column-start: 4;
+		grid-column-end: 9;
+		grid-row-start: 6;
+		overflow: hidden;
+		z-index: 2;
+	}
+	#dresser {
+		grid-column-start: 1;
+		grid-column-end: 9;
+		grid-row-start: 2;
+		grid-row-end: 8;
+		overflow: hidden;
+		z-index: 1;
+	}
+}
 /*Closet section*/
 #txt3 {
 	grid-column-start: 3;
@@ -447,7 +628,41 @@ header ul {
 		grid-row-start: 3;
 	}
 }
-
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txt3 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 4;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		border-left: #BD9E71 solid 1vw;
+		overflow: inherit;
+	}
+	#three {
+		grid-row-start: 2;
+		grid-column-start: 6;
+		z-index: 2;
+		padding-top: 0;
+		padding-left: 10px;
+		margin-top: -3vh;
+	}
+	#line3 {
+		grid-column-start: 4;
+		grid-column-end: 9;
+		grid-row-start: 6;
+		overflow: hidden;
+		z-index: 2;
+	}
+	#closet {
+		grid-column-start: 1;
+		grid-column-end: 9;
+		grid-row-start: 2;
+		grid-row-end: 8;
+		overflow: hidden;
+		z-index: 1;
+	}
+}
 /*The Process Section*/
 #process {
 	overflow: hidden;
@@ -455,11 +670,6 @@ header ul {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-}
-@media screen  and (max-width: 1280px) { 
-	#process {
-		background-position: center 10vh;
-	}
 }
 .largegrid {
 	display: grid;
@@ -475,12 +685,31 @@ header ul {
 .gold svg{
 	stroke: #BD9E71;
 	stroke-width: 0.7vh;
-}
+	height: 5vh;
+	width: 60vw;
 
+}
 .planning {
 
 }
-
+@media screen  and (max-width: 1280px) { 
+	#process {
+		background-position: center 10vh;
+	}
+}
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#process {
+		background-size: cover;
+		background-position-x: -105vw;
+	}
+	.largegrid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(14, 1fr);
+		height: 160vh;
+		padding: 5vh 15px;
+	}
+}
 /*A section*/
 #txtA {
 	grid-column-start: 3;
@@ -529,6 +758,33 @@ header ul {
 	#gold1 {
 		grid-column-start: 2;
 		margin:	2vh 3.4vw;
+	}
+}
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txtA {
+		grid-column-start: 2;
+		grid-column-end: 12;
+		grid-row-start: 3;
+		grid-row-end: 6;
+		margin-top: 2.8vh;
+		margin-left: 2vw;
+	}
+	#AAA {
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+	
+	#gold1 {
+		grid-column-start: 2;
+		grid-column-end: 11;
+		grid-row-start: 5;
+		margin:	3vh 2vw;
+	}
+	#book {
+		grid-column-start: 3;
+		grid-column-end: 13;
+		grid-row-start: 1;
+		grid-row-end: 5;
 	}
 }
 /*B section*/
@@ -581,6 +837,32 @@ header ul {
 		grid-row-start: 7;
 		margin-top:	6.4vh; 
 		margin-left: 3.4vw;
+	}
+}
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txtB {
+		grid-column-start: 2;
+		grid-column-end: 12;
+		grid-row-start: 8;
+		grid-row-end: 10;
+		margin-top: 2.8vh;
+		margin-left: 2vw;
+	}
+	#BBB {
+		grid-column-start: 2;
+		grid-row-start: 8;
+	}
+	#gold2 {
+		grid-column-start: 2;
+		grid-column-end: 11;
+		grid-row-start: 10;
+		margin:	-4vh 2vw;
+	}
+	#wood {
+		grid-column-start: 3;
+		grid-column-end: 13;
+		grid-row-start: 6;
+		grid-row-end: 9;
 	}
 }
 /*C section*/
@@ -636,7 +918,30 @@ header ul {
 		margin-left: 3.4vw;
 	}
 }
-
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#txtC {
+		grid-column-start: 2;
+		grid-column-end: 12;
+		grid-row-start: 13;
+		grid-row-end: 15;
+	}
+	#CCC {
+		grid-column-start: 2;
+		grid-row-start: 13;
+	}
+	
+	#gold3 {
+		grid-column-start: 2;
+		grid-column-end: 11;
+		grid-row-start: 14;
+	}
+	#saw {
+		grid-column-start: 3;
+		grid-column-end: 13;
+		grid-row-start: 11;
+		grid-row-end: 14;
+	}
+}
 /*About Us Section*/
 #aboutus {
 	overflow: hidden;
@@ -672,7 +977,26 @@ header ul {
 		padding-top: 0;
 	}
 }
-
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	.aboutgrid {
+		color: #fff;
+		margin: 0 auto;
+		padding: 2vh 5vw;
+		display: inline-block;
+		overflow: hidden;
+	}
+	.aboutgrid img {
+		width: 100%;
+		height: auto;
+		border-radius: 30px;
+		margin-bottom: 3vh;
+	}
+	.aboutgrid p {
+		
+		padding-left: 5vw;
+		border-left: #BD9E71 solid 1vw;
+	}
+}
 /*Testemonials Section*/
 #Testemonials {
 	background-image: url("../images/dark_wood2.jpg");
@@ -704,7 +1028,35 @@ header ul {
 		padding-top: 21vh;
 	}
 }
-
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#Testemonials {
+		height: 60vh;
+	}
+	.carousel {
+		width: inherit;
+		height: 50vh;
+	}
+	.carousel-inner {
+		width: inherit;
+		height: 50vh;
+		padding: 5vh 15vw;
+		text-align: center;
+	}
+	.carousel-item {
+		height: 50vh;
+		position: relative;
+		text-align: center;
+	}
+	.carousel-item :active {
+		height: 50vh;
+	}
+	.carousel-item p {
+		font-size: 12px;
+	}
+	.bucket {
+		padding: 0;
+	}
+}
 .carousel-indicators [data-bs-target] {
 	height: 6px;
 	width: 60px;
@@ -801,6 +1153,43 @@ header ul {
 		font-size: 18px;
 	}
 }
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	#feature {
+		background-image: url(../images/dark_wood3.jpg);
+		background-size: cover;
+		background-repeat: no-repeat
+	}
+	#Form {
+		height: 130vh;
+		padding: 10vh 6vw;
+		display: inline-block;
+	}
+	#Form h1 {
+		font-size: 30px;
+	}
+	#Form h3 {
+		font-size: 18px;
+		margin-bottom: 1vh;
+	}
+	#Form p {
+		font-size: 15px;
+	}
+	.btn-secondary {
+		font-size: 14px;
+	}
+	.form-label {
+		font-size: 18px;
+	}
+	.form-control {
+		width: 85vw;
+	}
+	.form-control-sm {
+		width: 30vw;
+	}
+	#stools {
+		display: none;
+	}
+}
 /* Footer styles and rules */
 
 footer {
@@ -811,11 +1200,7 @@ footer {
     margin-top: 10vh;
 	text-align: center;
 }
-@media screen  and (max-width: 1280px) { 
-	footer {
-		height: 60vh;
-	}
-}
+
 footer h4 {
 	padding: 2rem;
 	font-family: "GT-Light";
@@ -876,4 +1261,20 @@ footer li {
 	font-size: 12px;
 	margin-top: 40px;
 	color: antiquewhite;
+}
+@media screen  and (max-width: 1280px) { 
+	footer {
+		height: 60vh;
+	}
+}
+@media screen  and (max-width: 401px) and (max-height: 800px){ 
+	footer {
+		height: 70vh;
+		margin-top: 0;
+	}
+	#foot-logo {
+		max-width: 30vw;
+		height: auto;
+		margin: 5vh auto 0;
+	}
 }

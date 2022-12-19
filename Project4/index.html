@@ -27,19 +27,51 @@
     <!-- The header section -->
     <header class="container-fluid">
       <div class="row">
-        <div class="col-md-2" id="logo"> <!-- This is where we are putting our logo -->
+        <div class="col-3" id="logo"> <!-- This is where we are putting our logo -->
           <a href="index.html"> <img src="images/Ptarmigan_Logo_White.svg" alt="Ptarmigan Logo"></a>
         </div>
-        <nav class="col-md-7"> <!-- This is our header navigation bar links section -->
-          <ul>
-            <li> <a href="#hero"> Home</a></li>
-            <li> <a href="#projects"> Projects</a></li>
-            <li> <a href="#process"> Process</a></li>
-            <li> <a href="#aboutus"> About Us</a></li>
-          </ul>
-        </nav>
+        <div class="col-6" id="bigMenu">
+          <nav id="bigNav" > <!-- This is our header navigation bar links section -->
+            <ul>
+              <li> <a href="#hero"> Home</a></li>
+              <li> <a href="#projects"> Projects</a></li>
+              <li> <a href="#process"> Process</a></li>
+              <li> <a href="#aboutus"> About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--nav menu animation taken from https://codesandbox.io/s/agitated-tu-97n1i?file=/styles.css:1054-1070-->
+        <div class="col-2" id="mobileMenu">
+          <div id="navButton" onclick="myFunction()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <nav id="navMenu" > <!-- This is our header navigation bar links section -->
+            <ul>
+              <li> <a href="#hero"> Home</a></li>
+              <li> <a href="#projects"> Projects</a></li>
+              <li> <a href="#process"> Process</a></li>
+              <li> <a href="#aboutus"> About Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navMenu");
+        
+        if (x.style.display !== "inline-block") {
+          x.style.display = "inline-block";
+          navButton.classList.toggle('open');
+        } else {
+          x.style.display = "none";
+          navButton.classList.toggle('open');
+        }
+        
+      }
+    </script>
     <div id="contact">
       <a href="./contact.html">
         <img src="./images/hammer_icon.png" class="contact_img" />
@@ -55,9 +87,9 @@
         <div class="banner">
             <h2> Projects</h2>
         </div>
-        <!--Setting up layering to get everything to render properly
-            code inspiration taken from https://www.svgbackgrounds.com/svg-backgrounds-to-html/
-            for how to set up layers -->
+        <!--Setting up layering to get everything to render properly code inspiration taken from 
+          https://www.svgbackgrounds.com/svg-backgrounds-to-html/ for how to set up layers 
+            also used http://thenewcode.com/744/Make-SVG-Responsive to make the background responsive to size changes-->
         <div class="wrap-layer">
           <div class="text-layer">
             <div class="cssgrid" id="proj1">
@@ -161,8 +193,8 @@
           </div>
           <!--the line-->
           <div class="gold" id='gold1'>
-            <svg height="5vh" width="40vw">
-              <line x1="0" y1="0" x2="40vw" y2="0" />
+            <svg>
+              <line x1="0" y1="0" x2="60vw" y2="0" />
             </svg>
           </div>
           <!--Image-->
@@ -182,8 +214,8 @@
           </div>
           <!--the line-->
           <div class="gold" id='gold2'>
-            <svg height="5vh" width="40vw">
-              <line x1="0" y1="0" x2="40vw" y2="0" />
+            <svg>
+              <line x1="0" y1="0" x2="60vw" y2="0" />
             </svg>
           </div>
           <!--Image-->
@@ -203,8 +235,8 @@
           </div>
           <!--the line-->
           <div class="gold" id='gold3'>
-            <svg height="5vh" width="40vw">
-              <line x1="0" y1="0" x2="40vw" y2="0" />
+            <svg>
+              <line x1="0" y1="0" x2="60vw" y2="0" />
             </svg>
           </div>
           <!--Image-->
@@ -226,16 +258,16 @@
           </div>
           <div></div>
           <div>
-            <p>
+            <p >
               Starting off as a dream in a garage in Northern Edmonton, Ptarmigan has grown from one man's hobby
               into a multi-generational family business that wants to create heirlooms and memories for your family. 
               Our new, larger facility means Ptarmigan is ready and capable of handling the most challenging of your ideas.
-              <br>
-              <br>
+            </p>
+              <p>
               With over 50 years of combined experience, our family has been blending classic style with modern techniques to create custom projects for our clients.
               From the smallest of accent pieces to complete room designs, Ptarmigan is ready to handle any project size.
-              <br>
-              <br>
+              </p>
+              <p>
               We take our client's dreams and turn them into reality. 
             </p>
           </div>
@@ -320,38 +352,37 @@
           </div>
         </div>
         <div class="row" id="foot-links">
-          <div class="col">
+          <div class="col-sm">
             <a href="#hero"> Home</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#projects"> Projects</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#process"> Process</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="#aboutus"> About Us</a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <a href="./contact.html"> Start Your Project</a>
           </div>
         </div>
         <div class="row" id="contactus">
-          <div class="col" id="social">
+          <div class="col-sm" id="social">
             <h5>Follow Ptarmigan</h5>
             <a href="#"><img src="./images/icon-facebook.png"></a>
             <a href="#"><img src="./images/icon-twitter.png"></a>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <h5>110373-47 Faux St.<br> Edmonton AB. </h5>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <h5>780-654-7864 </h5>
             <h5>Hello@Ptarmiganwoods.com </h5>
           </div>
         </div>
       </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
